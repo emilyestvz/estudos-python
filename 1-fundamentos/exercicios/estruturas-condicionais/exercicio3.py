@@ -1,10 +1,15 @@
-# Solicite a nota de um aluno e diga se ele foi aprovado (nota ≥ 7), em recuperação (nota entre 5 e 6.9) ou reprovado (abaixo de 5).
+#  Peça a idade e informe se a pessoa é criança (até 12), adolescente (13–17), adulto (18–59) ou idoso (60+).
 
-nota = float(input(f'\nDigite a nota do aluno: '))
+nome = input(f'\nDigite o nome da pessoa: ')
+print(f'Olá, {nome}! ✨')
 
-if nota >= 7:
-    print(f'Aluno aprovado ✅')
-elif 5 <= nota < 6.9:
-    print(f'Aluno em recuperação ⚠️')
+idade = int(input(f'\nDigite a sua idade: '))
+
+if idade <= 12:
+    print(f'{nome} é uma criança 👶')
+elif 13 <= idade <= 17:
+    print(f'{nome} é adolescente 🧑')
+elif 18 <= idade <= 59:
+    print(f'{nome} é adulta 👨')
 else:
-    print(f'Aluno reprovado ❌')
+    print(f'{nome} é idosa 👴')
