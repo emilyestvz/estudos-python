@@ -4,7 +4,7 @@ nota = float(input(f'\nDigite a nota do aluno: '))
 
 if nota >= 7:
     print(f'Aluno aprovado ✅')
-elif 5 <= nota < 6.9:
+elif nota >= 5:
     print(f'Aluno em recuperação ⚠️')
 else:
     print(f'Aluno reprovado ❌')
