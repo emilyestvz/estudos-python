@@ -4,6 +4,8 @@
 # 3. Atualizar um contato existente
 # 4. Remover um contato
 
+#MELHORIAS: tratamento de erros e validação de entradas de números de telefone.
+
 contatos = {}
 
 while True:
